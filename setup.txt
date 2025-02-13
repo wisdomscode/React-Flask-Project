@@ -1,0 +1,32 @@
+npx create-react-app client
+
+virtualenv venv
+
+in powershell
+Set-ExecutionPolicy Unrestricted -Scope Process
+venv\Scripts\Activate
+
+
+in cmd
+venv\Scripts\activate.bat
+
+pip install Flask
+
+create the entry point to the server in server.py
+
+in termial run
+python server.py
+
+
+################################
+in client side
+
+remove
+App.text.js, index.css, logo.svg
+
+remove the import lines in index.js
+
+to config the frontend to packages.json and add proxy
+"proxy": "http://localhost:5000",
+
+Then go to App.js file and add
